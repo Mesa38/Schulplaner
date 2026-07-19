@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/widget_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/widget_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dein Fortschritt"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/widget_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Level 1: Schulanfänger"
+            android:textColor="#E0E0E0"
+            android:textSize="12sp"
+            android:layout_marginTop="4dp" />
+
+        <ProgressBar
+            android:id="@+id/widget_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_marginTop="8dp"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/widget_progress_drawable" />
+
+        <TextView
+            android:id="@+id/widget_next_exam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nächste Klausur: Keine"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:layout_marginTop="12dp"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+</RelativeLayout>
